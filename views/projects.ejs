@@ -2,6 +2,33 @@
 
 <%- include('partials/header') %>
 <%- include('partials/main_nav') %>
-  <h1><%= title %></h1>
-  <p> welcome to <%= title %></p>
+<!-- PAGE BEGIN -->
+    <h1 class="pageTitle"><%= title %></h1>
+    <p class="pageText">These are recent projects ive worked on.</p>
+    <div class="container my-5"> <!-- Puts everything in the center -->
+      <div class="project">
+          <h3>Phrase Statistics - Fall 2025</h3>
+          <b>Intro to Programming for I.T</b>
+          <p>This was a project I did for my intro to programming class. It was written in Python and would provide the number of uppercase letters, lowercase letters, letters, numbers, and special characters in a given phrase.</p>
+      </div>
+      <div class="project">
+          <h3>CLI Calendar - Fall 2025</h3>
+          <b>Intro to Programming for I.T</b>
+          <p>This was a final project for my intro to programming course; it allowed users to input events and track them. It was written in Python and used the command line to accept user input.</p>
+      </div>
+      <div class="project">
+          <h3>Calculator - Winter 2026</h3>
+          <b>Object Oriented Programming for I.T.</b>
+          <p>This was a project I did for my object-oriented programming course. This program functioned as a calculator with a GUI allowing users to easily input numbers and perform basic operations while displaying results. </p>
+      </div>
+      <div class="project">
+          <h3>Triage System - Winter 2026</h3>
+          <b>Object Oriented Programming for I.T.</b>
+          <p>This was my final project for my object-oriented programming course. This program was meant to serve as a check-in system for a hospital or clinic. Allowing patients to be checked in with a GUI makes it easy to visually tell who is most critical and displays current information like complaints and past history from previous visits saved on file.</p>
+      </div>
+    </div>
+
+    </div>
+    
+<!-- PAGE END -->
 <%- include('partials/footer') %>

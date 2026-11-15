@@ -2,6 +2,31 @@
 
 <%- include('partials/header') %>
 <%- include('partials/main_nav') %>
-  <h1><%= title %></h1>
-  <p> welcome to <%= title %></p>
+<!-- PAGE BEGIN -->
+  <h1 class="pageTitle"><%= title %></h1>
+
+  <div class="container my-5"> <!-- Puts everything in the center -->
+    <form action=mailto:emil.murphy@ontariotechu.net method="post" enctype="text/plain" name="ContactForm"> <!-- Mails to me after completion -->
+      <div class="mb-3">
+        <label for="nameInput" class="form-label">Name</label> <!-- Name Input (Required)-->
+        <input type="text" class="form-control" id="nameInput" required>
+      </div>
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email</label> <!-- Email Input (Required) -->
+        <input type="email" class="form-control" id="emailInput" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label> <!-- Message Input (Required) -->
+        <textarea class="form-control" id="message" name="message" rows="8" required></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="notARobotPromise" required> <!-- Checkbox (Required) -->
+        <label class="form-check-label" for="notARobotPromise">I promise im not a robot</label>
+      </div>
+      <button type="submit"  class="btn btn-primary">Submit</button> <!-- Form submit button. -->
+    </form>
+  </div>
+ 
+
+<!-- PAGE END -->
 <%- include('partials/footer') %>

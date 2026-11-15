@@ -1,5 +1,11 @@
+<!-- About Page, importing partials for header, nav and footer. -->
+
 <%- include('partials/header') %>
 <%- include('partials/main_nav') %>
-  <h1><%= title %></h1>
-  <p> welcome to <%= title %></p>
+<!-- PAGE BEGIN -->
+  <h1 class="pageTitle"><%= title %></h1>
+  <div class="container my-5"> <!-- Puts everything in the center -->
+    <p class="pageText">Hello, my name is Emil Murphy. I am a second year networking and I.T. student. </p>
+  </div>
+<!-- PAGE END -->
 <%- include('partials/footer') %>

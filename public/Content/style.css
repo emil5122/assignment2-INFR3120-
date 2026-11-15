@@ -1,8 +1,24 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+/* Centering for the page title found on every page, set with the Title Variable */
+.pageTitle{
+  text-align: center;
+  padding-top: 10px; /* so it doesnt hug the top as much */
 }
 
-a {
-  color: #00B7FF;
+.pageText{
+  text-align: center;
+}
+
+/* overides default bootstrap colors, sets it to purple instead of blue. */
+.btn-primary {
+  --bs-btn-bg: #ab7dfb;
+  --bs-btn-border-color: #ab7dfb;
+  --bs-btn-hover-bg: #7845ca;
+  --bs-btn-hover-border-color: #7845ca;
+}
+
+/* does the same for checkboxes, sets it to purple instead of blue. */
+.form-check-input:checked {
+  background-color: #ab7dfb;
+  border-color: #ab7dfb;
 }
