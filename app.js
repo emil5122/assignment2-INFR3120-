@@ -1,23 +1,23 @@
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
-let cookieParser = require('cookie-parser');
-let logger = require('morgan');
+//let cookieParser = require('cookie-parser');
+//let logger = require('morgan');
 
-let indexRouter = require('./routes/index');
+let indexRouter = require('./routes/index'); // Where the website routes are.
 
-let app = express();
+let app = express(); // Creates the express app.
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views')); // Tells express where our views are in /views/
+app.set('view engine', 'ejs'); // Specifies we are using ejs for rendering/views.
 
-app.use(logger('dev'));
+//app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'node_modules')));
+//app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public'))); // Makes the /public folder public
+app.use(express.static(path.join(__dirname, 'node_modules'))); // Allows site to access node_modules files.
 
 app.use('/', indexRouter); 
 

@@ -1,5 +1,5 @@
 var express = require('express');
-var router = express.Router();
+var router = express.Router(); // Creates an express router.
 
 router.get('/', function(req, res, next) {
   res.render('home', { title: 'Home' }); // Home Page [1]
@@ -17,4 +17,4 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' }); // Contact [4]
 });
 
-module.exports = router;
+module.exports = router; // Exports router to be used in different files.
